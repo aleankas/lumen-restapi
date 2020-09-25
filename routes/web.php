@@ -13,16 +13,13 @@
 |
 */
 
-// $router->get('/', function () use ($router) {
-//     // return $router->app->version();
-//     return 'Hello world';
-// });
-
-
+// Product
 $router->get('/product', 'ProductController@index'); // show all data
 $router->post('/product', 'ProductController@create'); // post data
 $router->get('/product/{id}', 'ProductController@show'); // show data with id or detail data
 $router->put('/product/{id}', 'ProductController@update'); // update data with id or detail data
 $router->delete('/product/{id}', 'ProductController@destroy'); // update data with id or detail data
 
+// Auth
 $router->post('/register', 'UserController@register'); // register
+$router->post('/login', 'UserController@login'); // login
