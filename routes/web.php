@@ -19,4 +19,6 @@
 // });
 
 
-$router->post('/product', 'ProductController@create');
+$router->get('/product', 'ProductController@index'); // show all data
+$router->post('/product', 'ProductController@create'); // post data
+$router->get('/product/{id}', 'ProductController@show'); // show data with id or detail data
