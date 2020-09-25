@@ -13,7 +13,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    // return $router->app->version();
-    return 'Hello world';
-});
+// $router->get('/', function () use ($router) {
+//     // return $router->app->version();
+//     return 'Hello world';
+// });
+
+
+$router->post('/product', 'ProductController@create');
