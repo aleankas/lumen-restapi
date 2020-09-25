@@ -24,3 +24,5 @@ $router->post('/product', 'ProductController@create'); // post data
 $router->get('/product/{id}', 'ProductController@show'); // show data with id or detail data
 $router->put('/product/{id}', 'ProductController@update'); // update data with id or detail data
 $router->delete('/product/{id}', 'ProductController@destroy'); // update data with id or detail data
+
+$router->post('/register', 'UserController@register'); // register
